@@ -12,6 +12,10 @@ public class UserService {
         return userDao.userCheck(userName, password);
     }
 
+    public int getMatchCount(String userName, String password){
+        return userDao.getMatchCount(userName, password);
+    }
+
 //    @Override
 //    protected void configure(HttpSecurity http) throws Exception {
 //        http
