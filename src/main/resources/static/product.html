@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StayFit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="product.js"></script>
+    <script type="text/javascript" src="get_info.js"></script>
+    <script type="text/javascript" src="resources/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="resources/less.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <!-- <link rel="stylesheet/less" type="text/css" href="product.less" /> -->
+    <link rel="stylesheet" href="resources/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="product.css" type="text/css" />
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+    </style> 
+    
+  </head>
+
+<div class="wrapper">
+
+  <header class="site-header">
+    <div class="inner-wrap">
+      <h1>StayFit.</h1>
+      <ul class="list-inline" style="list-style: none;">
+        <li><a href="#" class="account">Login</a></li>
+        <li><button class="your-cart js-toggle-cart" data-item-num="!">Your Cart <i class="fa fa-lg fa-shopping-cart"></i></button></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="site-toolbar">
+    <div class="inner-wrap clearfix">
+      <div class="notifications animated"><span>Amazing Product</span> Added to Cart!</div>
+    </div>
+  </div>
+
+  <div class="filter-grid">
+    <div class="inner-wrap">
+      <div class="filter-cell">
+        <a href="#" style="text-decoration: none; color: white; font-weight: bold;"><img src="diary.png" style="height: 30px; width: 30px;"></img> Diary</a>
+      </div>
+      <div class="filter-cell">
+            <a href="#" style="text-decoration: none; color: white; font-weight: bold;"><img src="meat.png" style="height: 30px; width: 35px;"></img> Meat</a>
+      </div>
+      <div class="filter-cell">
+            <a href="#" style="text-decoration: none; color: white; font-weight: bold;"><img src="bakery.png" style="height: 30px; width: 30px;"></img> Bakery</a>
+      </div>
+      <div class="filter-cell">
+            <a href="#" style="text-decoration: none; color: white; font-weight: bold;"><img src="fruit.png" style="height: 30px; width: 30px;"></img> Fruit & Veg</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="inner-wrap content-wrap">
+
+    <div class="product-grid" style="display: inline-block;">
+      <p>hi</p>
+      <!-- <div class="grid-product">
+        <div class="img-name apple"><h4>Apple</h4></div>
+        <p class="description">Calories: 400kCal</p>
+        <p class="price">$3.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product">
+        <div class="img-name ham"><h4>Ham</h4></div>
+        <p class="description">Calories: 10kCal</p>
+        <p class="price">$5.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product">
+        <div class="img-name croissant"><h4>Croissant</h4></div>
+        <p class="description">Calories: 332kCal</p>
+        <p class="price">$6.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product">
+        <div class="img-name chocomilk"><h4>Chocolate Milk</h4></div>
+        <p class="description">Calories: 14kCal</p>
+        <p class="price">$7.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product">
+        <div class="img-name banana"><h4>Banana</h4></div>
+        <p class="description">Calories: 9kCal</p>
+        <p class="price">$6.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product">
+        <div class="img-name steak"><h4>Steak</h4></div>
+        <p class="description">Calories: 900kCal</p>
+        <p class="price">$7.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product">
+        <div class="img-name baguette"><h4>Baguette</h4></div>
+        <p class="description">Calories: 30kCal</p>
+        <p class="price">$3.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product fav">
+        <div class="img-name yogurt"><h4>Yogurt</h4></div>
+        <p class="description">Calories: 9kCal</p>
+        <p class="price">$5.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product square">
+        <div class="img-name typewriter"><h4>Typewriter</h4></div>
+        <p class="description">Brief descriptionnnnnnn</p>
+        <p class="price">$7.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product">
+        <div class="img-name camera"><h4>Camera</h4></div>
+        <p class="description">Brief descriptionnnnnnn</p>
+        <p class="price">$3.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product circular square fav">
+        <div class="img-name canoe"><h4>Canoe</h4></div>
+        <p class="description">Brief descriptionnnnnnn</p>
+        <p class="price">$6.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product fav">
+        <div class="img-name watch"><h4>Watch</h4></div>
+        <p class="description">Brief descriptionnnnnnn</p>
+        <p class="price">$5.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product tasty">
+        <div class="img-name typewriter"><h4>Typewriter</h4></div>
+        <p class="description">Brief descriptionnnnnnn</p>
+        <p class="price">$7.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product circular">
+        <div class="img-name watch"><h4>Watch</h4></div>
+        <p class="description">Brief descriptionnnnnnn</p>
+        <p class="price">$5.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product fav">
+        <div class="img-name camera"><h4>Camera</h4></div>
+        <p class="description">Brief descriptionnnnnnn</p>
+        <p class="price">$3.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div>
+      <div class="grid-product square">
+        <div class="img-name canoe"><h4>Canoe</h4></div>
+        <p class="description">Brief descriptionnnnnnn</p>
+        <p class="price">$6.99 <button class="add-to-cart js-add-to-cart btn">Add</button><p>
+      </div> -->
+    </div>
+  </div>
+
+</div>
+
+<footer class="site-footer">
+  <div class="inner-wrap" style="text-align: center;">
+    <p style="color:white;">Need Help? Please email StayFit @ rpi.edu<br>
+    ITWS-6700 Sofware Development</p>
+  </div>
+</footer>
+
+<div class="cart">
+  
+  <div class="inner-wrap">
+    <h2>Your Cart</h2>
+    
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th class="product-remove">Remove Items  </th>
+          <th class="product-name">Product</th>
+          <th class="product-price">Price</th>
+          <th class="product-quantity">Quantity</th>
+          <th class="product-line-total">Subtotal</th>
+          <th class="product-calorie">Calories</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="product-camera">
+          <td><button type="button" class="product-remove" data-id="product-camera" style="background: none;border: none;"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+          <td>Camera</td>
+          <td class="product-price" data-price="3.99">3.99</td>
+          <td class="product-quantity">
+            <input type="number" pattern="\d*" step="1" min="1" max="5" value="1" data-id="product-camera">
+            <button class="plus js-number-control">
+              <i class="fa fa-plus-square"></i>
+            </button>
+            <button class="minus js-number-control">
+              <i class="fa fa-minus-square"></i>
+            </button>
+          </td>
+          <td class="product-line-total" id="product-camera-total" data-line-total="3.99">3.99</td>
+        </tr>
+      </tbody>
+      <tbody><button class="btn" style="background-color: #527a62; color:white;">Checkout</button></tbody>
+    </table>
+    
+  </div>
+
+</div>

@@ -6,7 +6,7 @@ $(document).ready(function() {
   $.ajax({
     // Put out a GET request for the requisite JSON file.
     type: "GET",
-    url: "data.js",
+    url: "http://localhost:8080/main/3",
     dataType: "json",
     
     // If the get request is successful, scrape the JSON data and format it for my webpage.
