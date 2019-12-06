@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>StayFit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script type="text/javascript" src="resources/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="product.js"></script>
+    <script type="text/javascript" src="resources/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="resources/less.js"></script>
+    <script type="text/javascript" src="resources/card.js"></script>
+    <script type="text/javascript" src="resources/jquery.card.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js" ></script>
+    <!-- <link rel="stylesheet/less" type="text/css" href="product.less" /> -->
+    <link rel="stylesheet" href="resources/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="checkout.css" type="text/css" />
+    <link rel="stylesheet" href="resources/card.css" type="text/css" />
+    
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+    </style> 
+    
+  </head>
+
+<div class="wrapper">
+
+  <header class="site-header">
+    <div class="inner-wrap">
+      <h1 onclick="location.href='./product.html';">StayFit.</h1>
+      <ul class="list-inline" style="list-style: none;">
+        <li><a href="#" class="account">Login</a></li>
+        <li><button class="your-cart js-toggle-cart" data-item-num="!">Your Cart <i class="fa fa-lg fa-shopping-cart"></i></button></li>
+      </ul>
+    </div>
+  </header>
+
+  <div class="site-toolbar">
+    <div class="inner-wrap clearfix">
+      <div class="notifications animated"><span>Amazing Product</span> Added to Cart!</div>
+    </div>
+  </div>
+  <div class="site-checkout-info" style="margin:0 auto">
+        <div class="body-text">Write your name in the right fields. Also write your imaginary card number. By clicking CCV field card will turn.</div>
+            <form action="confirm.html">
+              <div class="form-container">
+                <div class="personal-information">
+                  <h1>Payment Information</h1>
+                </div> <!-- end of personal-information -->
+                     
+                    <input id="column-left" type="text" name="first-name" placeholder="First Name"/>
+                    <input id="column-right" type="text" name="last-name" placeholder="Surname"/>
+                    <input id="input-field" type="text" name="number" placeholder="Card Number"/>
+                    <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+                    <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+                   
+                    <div class="card-wrapper"></div>
+                
+                    <input id="input-field" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Streed Address"/>
+                    <input id="column-left" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City"/>
+                    <input id="column-right" type="text" name="zipcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="ZIP code"/>
+                    <input id="input-field" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
+                    <input id="input-button" type="submit" value="Submit"/>
+                  
+              </form>
+        </div>
+    </div>
+</div>
+
+
+
+<footer class="site-footer">
+  <div class="inner-wrap" style="text-align: center;">
+    <p style="color:white;">Need Help? Please email StayFit @ rpi.edu<br>
+    ITWS-6700 Sofware Development</p>
+  </div>
+</footer>
+
+<div class="cart">
+  
+  <div class="inner-wrap">
+    <h2>Your Cart</h2>
+    
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th class="product-remove">Remove Items  </th>
+          <th class="product-name">Product</th>
+          <th class="product-price">Price</th>
+          <th class="product-quantity">Quantity</th>
+          <th class="product-line-total">Subtotal</th>
+          <th class="product-calorie">Calories</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="product-camera">
+          <td><button type="button" class="product-remove" data-id="product-camera" style="background: none;border: none;"><i class="fa fa-times" aria-hidden="true"></i></button></td>
+          <td>Camera</td>
+          <td class="product-price" data-price="3.99">3.99</td>
+          <td class="product-quantity">
+            <input type="number" pattern="\d*" step="1" min="1" max="5" value="1" data-id="product-camera">
+            <button class="plus js-number-control">
+              <i class="fa fa-plus-square"></i>
+            </button>
+            <button class="minus js-number-control">
+              <i class="fa fa-minus-square"></i>
+            </button>
+          </td>
+          <td class="product-line-total" id="product-camera-total" data-line-total="3.99">3.99</td>
+        </tr>
+      </tbody>
+      <tbody><button class="btn" style="background-color: #527a62; color:white;">Checkout</button></tbody>
+    </table>
+    
+  </div>
+
+</div>
