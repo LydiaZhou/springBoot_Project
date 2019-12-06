@@ -50,7 +50,7 @@
    margin: 0 auto;
  }
  .site-header {
-  background-image: url("header.png");
+  background-image: url("../images/header.png");
    position: fixed;
    top: 0;
    left: 0;
