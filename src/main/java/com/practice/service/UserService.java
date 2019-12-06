@@ -1,6 +1,7 @@
 package com.practice.service;
 
 import com.practice.dao.UserDao;
+import com.practice.web.LoginCommand;
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -8,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class UserService {
     private UserDao userDao;
 
-    public boolean userCheck(String userName, String password) {
-        return userDao.userCheck(userName, password);
+    public boolean userCheck(LoginCommand loginCommand) {
+        return userDao.userCheck(loginCommand.getUserName(), loginCommand.getPassword());
     }
 
     public int getMatchCount(String userName, String password){

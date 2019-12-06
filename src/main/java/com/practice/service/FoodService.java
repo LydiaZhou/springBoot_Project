@@ -19,21 +19,17 @@ public class FoodService {
     }
 
     public List<Food> getCategory(int category) {
-        Food a = new Food(10, "Bana", 3, 3, "AAA");
-        List<Food> foodList = new ArrayList<>();
-        foodList.add(a);
-        try {
-            foodList = foodDao.getCategory(category);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-//        Map<Integer, Food> foodMap = new HashMap<Integer, Food>();
-//        for (Food f: foodList) {
-//            foodMap.put(f.getCategory(), f);
+//        try {
+//            List<Food> foodList = foodDao.getCategory(category);
+//        } catch (Exception e) {
+//            e.printStackTrace();
 //        }
-//        return foodMap;
+        List<Food> foodList = foodDao.getCategory(category);
         return foodList;
+    }
+
+    public List<Food> getAll() {
+        return foodDao.getAll();
     }
 
     @Autowired

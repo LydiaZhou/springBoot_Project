@@ -1,0 +1,11 @@
+com/practice/dao/FoodDao.class
+com/practice/dao/UserDao$1.class
+com/practice/service/FoodService.class
+com/practice/model/Food.class
+com/practice/Application.class
+com/practice/dao/UserDao.class
+com/practice/web/LoginController.class
+com/practice/web/LoginCommand.class
+com/practice/service/UserService.class
+com/practice/model/User.class
+com/practice/web/FoodController.class
